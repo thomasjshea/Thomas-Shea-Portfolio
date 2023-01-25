@@ -1,0 +1,61 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selectors */
+
+body {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    color: #03244d;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    justify-content: space-between;
+    background-color: #03244d;
+    border-bottom: 10px solid #dd550c;
+}
+
+h1 {
+    display: flex;
+    width: 15%;
+    border: 25px solid #03244d;
+    background-color: white;
+    color: #dd550c;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
