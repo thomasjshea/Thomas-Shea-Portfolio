@@ -48,7 +48,7 @@ nav {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 li {
@@ -63,17 +63,8 @@ a {
     color: white
 }
 
-p {
-    display: flex;
-    margin: 25px 40px;
-    padding: 25px 40px;
-    font-size: 30px;
-    background-color: #03244d;
-    border: 5px solid #dd550c;
-    color: white;
-}
-
 /* Class Selectors */
+
 .avatar {
     display: flex;
     width: 100%;
@@ -83,5 +74,15 @@ p {
     background-position: center;
     justify-content: flex-end;
     align-items: flex-end;
-
 }
+
+.subtitle {
+    display: flex;
+    margin: 25px 40px;
+    padding: 25px 40px;
+    font-size: 30px;
+    background-color: #03244d;
+    border: 5px solid #dd550c;
+    color: white;
+}
+
