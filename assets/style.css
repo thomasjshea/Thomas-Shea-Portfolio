@@ -1,3 +1,4 @@
+/* Establishes CSS Varibles for use throughout the Project */
 :root {
     --blue: #03244d;
     --orange: #dd550c;
@@ -10,6 +11,7 @@
     box-sizing: border-box;
 }
 
+/* Sets default font size at 12px */
 html {
     font-size: 75%;
 }
@@ -24,11 +26,12 @@ h3 {
 body {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.75rem;
     background-color: var(--white);
     color: var(--blue);
 }
 
+/* Sets the Header so that it stays at the top of the page as we scroll */
 header {
     display: flex;
     position: fixed;
@@ -38,7 +41,7 @@ header {
     align-items: center;
     background-color: var(--blue);
     color: var(--white);
-    border-bottom: 10px solid #dd550c;
+    border-bottom: 10px solid var(--orange);
 }
 
 header h1 {
@@ -51,20 +54,23 @@ nav {
     padding-right: 5%;
 }
 
- nav a {
+/* Tells the text in the nav menu how to behave */
+nav a {
     text-decoration: none;
     padding: 5px 10px;
     margin-right: 8px;
     color: var(--white)
 }
 
+/* Gives a pseudo class to the nav menu when hovered over */
 nav a:hover {
     background-color: var(--white);
     color: var(--orange);
-    font-weight: 300;
+    font-weight: 500;
     transition: .25s ease-in;
 }
 
+/* Sets up the margins for the main section  */
 main {
     margin-top: 1%;
     margin-bottom: 2.25%;
@@ -77,8 +83,7 @@ p {
     margin-bottom: 1.2rem;
 }
 
-
-
+/* Sets up the banner to display */
 .banner {
     display: flex;
     width: 100%;
@@ -101,14 +106,14 @@ p {
     color: var(--white);
 }
 
+/* Sets up each content section as a flexbox */
 .content {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-bottom: 1.5%;
+    margin-bottom: 2.5%;
 }
 
-.section-header{
+/* Formatting for section headers */
+.section-header {
     flex: 0 0 10%;
     text-align: right;
     padding-right: 1%;
@@ -116,16 +121,22 @@ p {
     font-size: 3.5rem;
 }
 
-.content figure {
-    margin-left: 1%;
+.bio {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
 }
 
-.content img {
+.bio img {
     height: 250px;
     width: fit-content;
 }
 
-.bio {
-    position: relative;
-    left: 5%
+.bio figcaption {
+    margin-left: 2%;
 }
+
+.bio figcaption p:last-child {
+    margin-bottom: 0;
+}
+
