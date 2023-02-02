@@ -5,6 +5,7 @@
     --white: #fff;
 }
 
+/* Universal styling selector */
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +17,14 @@ html {
     font-size: 75%;
 }
 
+/* Sets headers to bold font and taller line height */
 h1,
 h2,
 h3 {
     font-weight: 700;
     line-height: 1.2;
 }
+
 
 body {
     position: relative;
@@ -44,11 +47,20 @@ header {
     border-bottom: 10px solid var(--orange);
 }
 
+/* Sets background color and padding for header  */
 header h1 {
     background-color: var(--orange);
     padding-left: 5%;
+    padding-right: 1%;
 }
 
+/* Sets highlight color for header text */
+header h1::selection{
+    color: var(--blue);
+    background: var(--white);
+}
+
+/* Sets up nav menu as flexbox */
 nav {
     display: flex;
     padding-right: 5%;
@@ -70,15 +82,27 @@ nav a:hover {
     transition: .25s ease-in;
 }
 
+/* Sets text and backgrount color when nav menu is tabbed to or clicked */
+nav a:focus {
+    color: var(--orange);
+    background: var(--white);
+}
+
+nav a::selection {
+    color: var(--orange);
+    background: var(--white);
+}
+
 /* Sets up the margins for the main section  */
 main {
-    margin-top: 1%;
-    margin-bottom: 2.25%;
+    margin-top: 2%;
+    margin-bottom: 3%;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Sets bottom margin for paragraph sections */
 p {
     margin-bottom: 1.2rem;
 }
@@ -100,14 +124,20 @@ p {
     display: flex;
     margin: 25px 40px;
     padding: 25px 40px;
-    font-size: 30px;
+    font-size: 2.5rem;
     background-color: var(--blue);
     border: 5px solid var(--orange);
     color: var(--white);
 }
 
-/* Sets up each content section as a flexbox */
-.content {
+/* Sets the color for the subtitle when highlighted */
+.subtitle::selection{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+/* Sets up each page section as a flexbox */
+.page-section {
     display: flex;
     margin-bottom: 2.5%;
 }
@@ -121,22 +151,78 @@ p {
     font-size: 3.5rem;
 }
 
-.bio {
+/* Sets text color and background when highlighted for section header */
+.section-header::selection {
+    color: var(--orange);
+    background: var(--blue);
+}
+
+/* Setup content sections as a flexbox */
+.content {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-left: 2%;
 }
 
-.bio img {
-    height: 250px;
-    width: fit-content;
+/* Sets the max size for photo */
+.headshot {
+    max-height: 250px;
+    width: auto;
 }
 
-.bio figcaption {
+/* Sets the background color when photo is highlighted */
+.headshot::selection {
+    background-color: var(--white);
+}
+
+/* Sets the Margin for the About Me section */
+.bio {
     margin-left: 2%;
 }
 
-.bio figcaption p:last-child {
+/* Sets color for text when highlighted */
+.bio p::selection {
+    color: var(--orange);
+    background: var(--blue);
+    
+}
+
+/* Removes bottom margin at end of bio section */
+.bio p:last-child {
     margin-bottom: 0;
+}
+
+/* Sets up contact section as a flexbox and centers items */
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+/* Sets font color of links to blue  */
+.contact a {
+    color: var(--blue);
+    }
+
+/* Removes padding from first link in contact section to align with rest of content     */
+.contact a:first-child {
+    padding: 0;
+}
+
+/* Sets text color and background when contact link is hovered over  */
+.contact a:hover {
+    color: var(--orange);
+    background: var(--blue);
+}
+
+/* Sets text color when contact link is tabbed over or clicked */
+.contact a:focus{
+    color: var(--orange);
+    background: var(--blue);
+}
+
+/* Sets text color when contact link is highlighted */
+.contact a::selection {
+    color: var(--orange);
+    background: var(--blue);
 }
 
