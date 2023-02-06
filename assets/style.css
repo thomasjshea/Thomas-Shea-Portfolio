@@ -96,6 +96,10 @@ nav a::selection {
 
 /* Sets up the margins for the main section  */
 main {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
     margin-top: 2%;
     margin-bottom: 3%;
     max-width: 90%;
@@ -111,7 +115,7 @@ p {
 /* Sets up the banner to display */
 .banner {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 600px;
     background-image: url(./images/stripes.jpg);
     background-size: cover;
@@ -122,7 +126,7 @@ p {
 
 /*Positions the subtitile within the banner*/
 .subtitle {
-    display: flex;
+    /* display: flex; */
     margin: 25px 40px;
     padding: 25px 40px;
     font-size: 2.5rem;
@@ -160,12 +164,14 @@ p {
 
 /* Setup display for content sections */
 .content {
+    display: flex;
     gap: 2rem;
     width: 100%;
     margin-left: 2%;
 }
 
-ul.content {
+/* Sets flex properties for Work section */
+div.content {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
@@ -200,7 +206,8 @@ ul.content {
 }
 
 .project {
-    position: relative;
+    display: flex;
+    align-items: flex-end;
     /* flex: 1; */
     border: 5px solid var(--orange);
     height: 300px;
@@ -209,29 +216,37 @@ ul.content {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-decoration: none;
 }
 
-.project a {
-    text-decoration: none;
-    color: var(--white);
-    padding: 1rem 2rem;
-    ;
+.project:hover {
+    background-color: var(--orange);
+}
 
+.project h3 {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--orange);
+  border: 2px solid var(--blue);
 }
 
 
 .first-project {
-    flex: 2 1 50%;
+    flex: 0 1 100%;
     background-image: url(./images/Horiseon\ Screenshot.png);
     background-size: cover;
     background-position: top;
     height: 600px;
-}
+ }
 
 
 /* Sets up contact section as a flexbox and centers items */
 .contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -263,11 +278,79 @@ ul.content {
     background: var(--blue);
 }
 
-@media screen and (min-width: 316px) {
-    .content {
-        display: flex;
-        
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    padding-top: 2rem;
+    border-top: 10px solid var(--orange);
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 1038px) {
+    header {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
+    header h1 {
+        padding: 0;
+    }
 
+    nav {
+        padding: 0;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .project {
+        flex-basis: 100%;
+        height: 400px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 10%
+    }
+   
+    .banner {
+        height: auto;
+        background-image: none;
+    }
+    .banner p {
+       
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        height: 9.5;
+    }
+    
+
+}
+
+@media screen and (max-width: 320px) {
+    header{
+        height: 8.5%;
+    }
+
+    footer{
+        width: 100%
+    }
+    
 }
