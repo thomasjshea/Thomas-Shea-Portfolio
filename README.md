@@ -24,8 +24,8 @@ Screenshot 2:
 
 ## Credits
 
-Received Assistance from Tutor David Elutilo.<br> 
-Received Assistance from AskBCS Assistant Erica.
+Received Assistance from Tutor David Elutilo for grid formatting.<br> 
+Received Assistance from AskBCS Assistant Erica to help me get the images to display as links.
 
 ## License
 
