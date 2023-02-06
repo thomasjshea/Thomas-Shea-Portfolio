@@ -24,7 +24,7 @@ Screenshot 2:
 
 ## Credits
 
-Received Assistance from Tutor David Elutilo.
+Received Assistance from Tutor David Elutilo.<br> 
 Received Assistance from AskBCS Assistant Erica.
 
 ## License
