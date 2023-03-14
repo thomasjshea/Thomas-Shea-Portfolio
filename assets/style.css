@@ -270,11 +270,6 @@ div.content {
     color: var(--blue);
 }
 
-/* Removes padding from first link in contact section to align with rest of content     */
-.contact a:first-child {
-    /* padding: 0; */
-}
-
 /* Sets text color and background when contact link is hovered over  */
 .contact a:hover {
     color: var(--orange);
@@ -345,9 +340,6 @@ footer {
     .banner {
         height: auto;
         background-image: none;
-    }
-    .banner p {
-       
     }
 }
 
