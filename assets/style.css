@@ -212,7 +212,6 @@ div.content {
     border: 5px solid var(--orange);
     height: 300px;
     width: 48.5%;
-    background-image: url(./images/Coming\ Soon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -233,10 +232,26 @@ div.content {
   border: 2px solid var(--blue);
 }
 
+#daily-planner{
+    background-image: url(./images/Daily-Planner-Screenshot.png);
+}
+
+#password-generator{
+    background-image: url(./images/Password-Generator-Screenshot.png);
+}
+
+#javascript-quiz{
+    background-image: url(./images/Javascript-Quiz-Screenshot.png);
+}
+
+#weather-dashboard{
+    background-image: url(./images/Weather-Dashboard-Screenshot.png);
+}
+
 
 .first-project {
     flex: 0 1 100%;
-    background-image: url(./images/Horiseon\ Screenshot.png);
+    background-image: url(./images/Character-Generator-Screenshot.png);
     background-size: cover;
     background-position: top;
     height: 600px;
