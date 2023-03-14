@@ -234,18 +234,22 @@ div.content {
 
 #daily-planner{
     background-image: url(./images/Daily-Planner-Screenshot.png);
+    background-size: cover;
 }
 
 #password-generator{
     background-image: url(./images/Password-Generator-Screenshot.png);
+    background-size: cover;
 }
 
 #javascript-quiz{
     background-image: url(./images/Javascript-Quiz-Screenshot.png);
+    background-size: cover;
 }
 
 #weather-dashboard{
     background-image: url(./images/Weather-Dashboard-Screenshot.png);
+    background-size: cover;
 }
 
 
