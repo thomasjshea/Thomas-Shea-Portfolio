@@ -242,8 +242,8 @@ div.content {
     background-size: cover;
 }
 
-#javascript-quiz{
-    background-image: url(./images/Javascript-Quiz-Screenshot.png);
+#character-generator{
+    background-image: url(./images/Character-Generator-Screenshot.png);
     background-size: cover;
 }
 
@@ -255,7 +255,7 @@ div.content {
 
 .first-project {
     flex: 0 1 100%;
-    background-image: url(./images/Character-Generator-Screenshot.png);
+    background-image: url(./images/Homepage.png);
     background-size: cover;
     background-position: top;
     height: 600px;
