@@ -232,8 +232,8 @@ div.content {
   border: 2px solid var(--blue);
 }
 
-#daily-planner{
-    background-image: url(./images/Daily-Planner-Screenshot.png);
+#snack-shack{
+    background-image: url(./images/Homepage.png);
     background-size: cover;
 }
 
@@ -255,7 +255,7 @@ div.content {
 
 .first-project {
     flex: 0 1 100%;
-    background-image: url(./images/Homepage.png);
+    background-image: url(./images/Trader-Junks.png);
     background-size: cover;
     background-position: top;
     height: 600px;
